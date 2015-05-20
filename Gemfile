@@ -5,6 +5,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+# Use PostgreSQL as the database for Active Record
+gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -41,5 +43,9 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-end
 
+  # Master Active Record and have a Ton of fun Doing it!
+  gem 'rspec-rails', '~> 3.0.0'
+  gem 'factory_girl_rails', '~> 4.4.0'
+  gem 'database_cleaner','~> 1.3.0'
+end
